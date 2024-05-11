@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval JS</title>
+</head>
+<body  style="background: #060606; color: white">
+    <h1>Welcome to..</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+    const sayDate = function(str) {
+        // console.log("Mudassir", Date());
+        console.log(str, Date()); //make value dynamic using parameter
+    }
+    // setInterval(sayDate, 1000) // setinterval run continously
+    // setInterval(sayDate, 1000, 'Mudassir')  //third parameter use above func parameter value
+
+    // stop above func using cleartimeout
+    const intervalId = setInterval(sayDate, 1000, 'Mudassir')
+    clearInterval(intervalId) //  stop execution
+
+    
+
+
+
+</script>
+</html>
+
+<!-- Difference b/w setTimeout or setInterval -->
+<!-- setTimeout run only once and setInterval runs continously -->
