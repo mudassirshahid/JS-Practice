@@ -329,6 +329,10 @@ const shoopingCart = [
         itemName: "MERN course",
         price: 22999
     },
+    {
+        itemName: "MERN course",
+        price: 1004
+    },
 ]
 
 const priceToPay = shoopingCart.reduce( (acc, item) => acc + item.price, 0  )
